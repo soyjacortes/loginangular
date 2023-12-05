@@ -1,0 +1,11 @@
+<h1>{{ Mensaje }}</h1>
+<div class="login-container">
+    <h2>Login</h2>
+    <form [formGroup]="form" (ngSubmit)="enviar()">
+        <input type="email" name="email" placeholder="Correo de usuario" required formControlName="email"><br>
+        <input type="password" name="password" placeholder="Contraseña" required formControlName="password"><br>
+        <input type="submit" value="Iniciar sesión">
+    </form>
+    <button (click)="registrar()">Registrarse</button>
+    <button (click)="olvido()">Olvidé mi Contraseña</button>
+</div>
